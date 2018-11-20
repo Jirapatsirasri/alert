@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "441836479084",
+    "firebase_url": "https://cityzen-bbe53.firebaseio.com",
+    "project_id": "cityzen-bbe53",
+    "storage_bucket": "cityzen-bbe53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441836479084:android:2e41095a5ee0dead",
+        "android_client_info": {
+          "package_name": "com.example.asus.alert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441836479084-tvoql2vuahsnmts89rv8de4imbllhgk6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.alert",
+            "certificate_hash": "c74c9709abc7f2a0848f0510b8baef9f0d854d4e"
+          }
+        },
+        {
+          "client_id": "441836479084-emua6p1h136jvh29utv0uf4tjsfrom5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOMBDXzoOKuSEbhMVAixExAcaORw2C1_c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441836479084-emua6p1h136jvh29utv0uf4tjsfrom5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

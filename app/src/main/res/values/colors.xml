@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActionbar">#D3D3D3</color>
+    <!--<color name="colorTop">#000</color>-->
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#000</color>
+</resources>

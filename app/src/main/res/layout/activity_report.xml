@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report">
+
+    //toolbar
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCustomTheme">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="report alert"
+            android:textSize="30dp"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/alertimage_alertpage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/alert" />
+
+    <TextView
+        android:id="@+id/texttopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertimage_alertpage"
+        android:layout_marginLeft="30dp"
+        android:text="Topic"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edittext_topic"
+        android:layout_width="330dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/texttopic"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_textbox"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_topic"
+        android:layout_marginLeft="30dp"
+        android:text="Detail"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edittext_detail"
+        android:layout_width="330dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textdetail"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_textbox"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_detail"
+        android:layout_marginLeft="30dp"
+        android:text="Location"
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edittext_location"
+        android:layout_width="330dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textlocation"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_textbox"
+        android:textColor="@color/colorText"
+        />
+    <TextView
+        android:id="@+id/texttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_location"
+        android:text="Type of ALERT"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"
+        />
+
+    <RadioGroup
+        android:id="@+id/grouptype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/texttype">
+
+        <RadioButton
+            android:id="@+id/ra_butt_acc_eme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accident / Emergency"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"/>
+        <RadioButton
+            android:id="@+id/ra_butt_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Traffic"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"/>
+        <RadioButton
+            android:id="@+id/ra_butt_weahter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"/>
+        <RadioButton
+            android:id="@+id/ra_butt_secret_eme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secret Emergency"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Send as?"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:layout_below="@id/grouptype"
+        />
+    <RadioGroup
+        android:id="@+id/groupsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/textsend">
+        <RadioButton
+            android:id="@+id/ra_butt_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identify your username"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"
+            />
+        <RadioButton
+            android:id="@+id/ra_butt_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anonymous"
+            android:textSize="17dp"
+            android:textColor="@color/colorText"/>
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/image_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupsend"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/send" />
+
+</RelativeLayout>
